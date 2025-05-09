@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marely´s Gym</title>
+</head>
+<body style="background-color: rgb(182, 42, 24);">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h1 style="text-align: center;">PROYECTO FINAL DEL PERIODO</h1>
+    <label style="margin-left:  400px;" for="Usuario">Usuario</label>
+    <input type="text">
+    <label for="Contraseña">Contraseña</label>
+    <input type="Password" id="password"> 
+    <input type="checkbox" id="show-pass" onchange="oncheck (this)">
+    <label for="show-pass" id="label-show">Mostrar contraseña</label>
+    <script>
+        function Oncheck(e){
+            var inputpass = document.getElementById("password");
+            var labelpass = document.getElementById("label-show");
+            inputpass.type=e.checked ? "text" : "password";
+            labelpass.textContent=e.checked ? "ocultar contraseña" : "mostrar contraseña"
+
+        }
+    </script>
+    <br><br>
+   <a href="paginaaprincipal.html"><button style="margin-left: 400px;">Ingresar</button></a>
+   <a href="formulario.html"><button>Registrarse</button></a> 
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+   <form action="mailto:keniabarraza63@gmail.com">
+    <fieldset>
+        <legend>Informacion General</legend>
+        <label for="">Nombre:</label>
+        <input placeholder="Ej. Marely" type="text" required>
+        <label style="margin-left: 60PX;" for="Apellidos">Apellidos:</label>
+        <input placeholder="Ej. Barraza" type="text">
+        <label style="margin-left: 60PX;"  for="Correo Electronico">Correo Electronico</label>
+        <input placeholder="Ej. keniabarraza63@gmail.com" type="Email">
+        <br><br>
+        <label for="Fnac">Fecha de Nacimiento:</label>
+        <input type="Date">
+        <br><br>
+        <label for="Usuario">Usuario:</label>
+        <input type="text" required>
+        <label style="margin-left: 20px;" for="Contraseña">Contraseña:</label>
+        <input type="password" id="Password">
+        <input type=checkbox id="password" onchange="Oncheck(this)">
+        <label for="Show-pass" id="Label-show">Mostar contraseña</label>
+        <script>
+            function Oncheck(e){
+                var inputpassword= document.getElementById ("Password");
+                var labelshow= document.getElementById ("label-show");
+                inputpassword.type= e.checked ? "text": "password";
+                labelshow.textContent= e.checked ? "ocultar contraseña"
+                :"Mostar contraseña"
+            }
+
+        </script>
+        <input type="Password">
+        <Fieldset>
+        </Fieldset>
+        <legend>Encuesta Rapida:</legend>
+        <label for="¿Que Sistema Operativo Sabes Usar?">¿Que Sistema Operativo Sabes Usar?</label>
+        <br><br>
+        <input type="Checkbox"> 
+        <label for="Windows">Windows</label>
+        <input style="margin-left: 50PX;" type="checkbox">
+        <label for="Mac Os">Mac Os</label>
+        <input style="margin-left: 50PX;" type="checkbox">
+        <label for="Linux">Linux</label>
+        <br><br>
+        <label for="¿Caul Prefieres?">¿Cual Prefieres?</label>
+        <br><br>
+        <input name="sis" type="radio">Windows
+        <input name="sis"  style="margin-left: 50px;" type="radio">Mac Os
+        <input name="sis" style="margin-left: 50px;" type="radio">Linux
+        <br><br>
+        <label for="¿Caul Prefieres?">¿Cual Prefieres?</label>
+        <br><br>
+        <select name="" id="">
+            <option value="0">Windows</option>
+            <option value="1">Mac Os</option>
+            <option value="2">Linux</option>
+            <option value="3">Otro</option>
+        </select>
+    </fieldset>
+    <br><br>
+    <input style="cursor: pointer;" type="submit" value="Enviar" >
+    <a href="paginaaprincipal.html"><button style="margin-left: 400px;">Ingresar</button></a>
+   </form> 
+</body>
+</html>

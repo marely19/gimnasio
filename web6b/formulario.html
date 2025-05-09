@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body style="background-color: rgb(180, 43, 43);">
+  <h1 style="font-style: oblique;">REGISTRARSE!</h1>  
+
+  <h2>Iniciar seción</h2>
+   <form action="#" method="post"></form>
+   <label for="Usuario">Usuario:</label>
+        <input type="text" required>
+        <label style="margin-left: 20px;" for="Contraseña">Contraseña:</label>
+        <input type="password" id="Password">
+        <input type=checkbox id="password" onchange="Oncheck(this)">
+        <label for="Show-pass" id="Label-show">Mostar contraseña</label>
+   <br><br>
+
+   
+        <label for="">Nombre:</label>
+        <input placeholder="Nom" type="text" required>
+        <label style="margin-left: 60PX;" for="Apellidos">Apellidos:</label>
+        <input placeholder="apellidos" type="text">
+        <label style="margin-left: 60PX;"  for="Correo Electronico">Correo Electronico</label>
+        <input placeholder="@gmail.com" type="Email">
+        <br><br>
+        <label for="Fnac">Fecha de Nacimiento:</label>
+        <input type="Date">
+        <br><br>
+        
+        <script>
+        <script>
+             function Oncheck(e){
+                var inputpassword= document.getElementById ("Password");
+                var labelshow= document.getElementById ("label-show");
+                inputpassword.type= e.checked ? "text": "password";
+                labelshow.textContent= e.checked ? "ocultar contraseña"
+                :"Mostar contraseña"
+            }
+
+        </script>
+        <a href="paginaaprincipal.html"><button style="margin-left: 400px;">Ingresar</button></a>
+        
+
+</body>
+</html>
